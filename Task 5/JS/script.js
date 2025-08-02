@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
       listToggle.style.color = '#000';
     } else {
       navbar.classList.remove('scrolled');
-      navImg.src = "../IMG/restaurant-2-light.png";
+      navImg.src = "./IMG/restaurant-2-dark.png";
     }
 
     let currentSection = '';
