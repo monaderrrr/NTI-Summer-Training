@@ -1,0 +1,144 @@
+.team .team-member {
+  background-color: var(--surface-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.team .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .team-member .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .social a {
+  transition: color 0.3s;
+  color: var(--heading-color);
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .social a i {
+  line-height: 0;
+}
+
+.team .team-member .social a:hover {
+  color: var(--accent-color);
+}
+
+.team .team-member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .team-member .member-info {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.team .team-member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.team .team-member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.team .team-member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.team .team-member:hover .social {
+  opacity: 1;
+}
+
+.team-2 {
+  --default-color: #ffffff;
+}
+
+.team-2 .member {
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+
+.team-2 .member .member-info {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  transition: 0.2s;
+}
+
+.team-2 .member .member-info-content {
+  margin-top: -50px;
+  transition: margin 0.2s;
+}
+
+.team-2 .member:hover .member-info {
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.team-2 .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+.team-2 .member h4 {
+  color: var(--contrast-color);
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.team-2 .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.team-2 .member .social {
+  margin-top: 15px;
+}
+
+.team-2 .member .social a {
+  transition: 0.3s;
+  color: var(--default-color);
+}
+
+.team-2 .member .social a:hover {
+  color: var(--accent-color);
+}
+
+.team-2 .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
